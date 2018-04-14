@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="全部评论"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View android:background="@android:color/holo_red_dark"
+            android:layout_width="20dp"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/comments_pullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+    <RelativeLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/edit"
+
+            android:background="@android:color/white"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+        <Button android:text="发送"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

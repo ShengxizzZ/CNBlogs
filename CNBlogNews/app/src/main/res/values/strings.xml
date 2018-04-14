@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CNBlogNews</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="system_setting_str">系统设置</string>
+    <string name="flow_saving_str">省流量模式</string>
+    <string name="eye_protect_str">护眼模式</string>
+</resources>

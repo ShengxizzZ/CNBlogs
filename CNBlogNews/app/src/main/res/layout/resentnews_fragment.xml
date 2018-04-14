@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/bg_sunny"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <TextView android:id="@+id/resentNews_title"
+            android:layout_width="wrap_content"
+            android:text="最新新闻"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/resentNews_pullListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>
